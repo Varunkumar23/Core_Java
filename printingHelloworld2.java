@@ -1,19 +1,18 @@
-class printHelloWorld 
+class printingHelloworld2 
 {
 	public static void main(String[] args) 
 	{
-		System.out.print("Hii ");
-		System.out.print("Hello");		
-		System.out.println();
+		System.out.println("Hello World!");
 		System.out.print("Lpu ");
 		System.out.print("welcome ");
 		System.out.print("to ");
 		System.out.print("java ");
 		System.out.print("class");
-		
-System.err.println("Invalid input");
+		System.err.println("Invalid input");
+		System.err.println("Invalid input");
+		System.out.println("name:\tvarun\nage:\t21");
 
-										
-				
+		
+
 	}
 }

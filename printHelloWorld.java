@@ -2,8 +2,17 @@ class printHelloWorld
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("Hello World!");
-				System.out.println("Hello World!");
-								System.out.print("");
+		System.out.print("Hii ");
+		System.out.print("Hello");		
+		System.out.println();
+		System.out.print("Lpu ");
+		System.out.print("welcome ");
+		System.out.print("to ");
+		System.out.print("java ");
+		System.out.print("class");
+		System.err.println("Invalid input");
+
+										
+				
 	}
 }
