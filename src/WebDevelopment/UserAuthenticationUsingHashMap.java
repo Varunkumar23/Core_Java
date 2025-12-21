@@ -3,7 +3,7 @@ import java.util.*;
 
 public class UserAuthenticationUsingHashMap {
 	
-	class User{
+	static class User{
 		private String email;
 		private String password;
 		private String role;
@@ -31,7 +31,7 @@ public class UserAuthenticationUsingHashMap {
 		}
 	}
 	
-	class UserService{
+	static class UserService{
 		private HashMap<String,User> userDetails=new HashMap<>();
 		
 		public void register(String email,String password,String role) {
@@ -66,5 +66,25 @@ public class UserAuthenticationUsingHashMap {
 		}
 	}
 	
+	
+	public static void main(String[] args) {
+		UserService service=new UserService();
+		service.register("admin1@gmail.com","admin@123","admin");
+		service.register("admin1@gmail.com","admin@223","admin");
+		
+		try {
+			if(service.login("admin1@gmail.com", "admin@123")) {
+				System.out.println("Login Successfull");
+			}
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+			}
+		
+		User user = service.getUserProfile("admin@test.com");
+        System.out.println("Role: " + user.getRole());
+
+		
+		
+	}
 	
 }
