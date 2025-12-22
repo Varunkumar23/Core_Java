@@ -64,13 +64,27 @@ public class UserAuthenticationUsingHashMap {
 		public User getUserProfile(String email) {
 			return userDetails.get(email);
 		}
+		
+		public void roleBasedAccess(String email) {
+			User user=userDetails.get(email.toLowerCase());
+			
+			if(user==null) {
+				throw new RuntimeException("User Not Found");
+			}
+			if(!user.getRole().equals("admin")) {
+				throw new RuntimeException("Access Denied!");
+			}
+		}
 	}
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
 		UserService service=new UserService();
 		service.register("admin1@gmail.com","admin@123","admin");
-		service.register("admin1@gmail.com","admin@223","admin");
+		service.register("admin2@gmail.com","admin@223","admin");
 		
 		try {
 			if(service.login("admin1@gmail.com", "admin@123")) {
@@ -80,8 +94,12 @@ public class UserAuthenticationUsingHashMap {
 			System.out.println(e.getMessage());
 			}
 		
-		User user = service.getUserProfile("admin@test.com");
-        System.out.println("Role: " + user.getRole());
+		User user = service.getUserProfile("admin1@gmail.com");
+		if (user != null) {
+		    System.out.println("Role: " + user.getRole());
+		} else {
+		    System.out.println("User profile not found");
+		}
 
 		
 		
