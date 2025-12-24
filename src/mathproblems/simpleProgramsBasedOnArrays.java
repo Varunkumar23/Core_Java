@@ -137,7 +137,7 @@ public class simpleProgramsBasedOnArrays {
 		
 		int n=9;
 		int num=n;
-		int sum = 0;  0
+		int sum = 0;
  		while (n > 0) {
 			int digit = n % 10;
 			sum += digit;
