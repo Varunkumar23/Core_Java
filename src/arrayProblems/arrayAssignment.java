@@ -313,7 +313,7 @@ public class arrayAssignment {
 
 	}
 
-	public static boolean isPalindrome(int n) {
+	public static boolean isaPalindrome(int n) {
 		int temp1 = n;
 		int rev = 0;
 		while (temp1 > 0) {
