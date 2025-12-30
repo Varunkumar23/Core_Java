@@ -3,6 +3,7 @@ package Encapsulation_Pillar1;
 public class Nonstatic_OuterClasses {
 
 	class InnerClass {
+
 		void test() {
 			System.out.println("Non static Method");
 		}
