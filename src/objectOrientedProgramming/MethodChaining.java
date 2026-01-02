@@ -15,7 +15,7 @@ class Demo {
 
 	Demo m4() {
 		return this;
-	}
+	} 
 
 }
 
