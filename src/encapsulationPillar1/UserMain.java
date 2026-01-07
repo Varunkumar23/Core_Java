@@ -1,4 +1,4 @@
-package Encapsulation_Pillar1;
+package encapsulationPillar1;
 
 public class UserMain {
 

@@ -5,17 +5,17 @@ public class User {
 	private String email;
 	private String password;
 
-	private int failedAttempts;
-	private boolean accountLocked;
-
-	private static final int MAX_ATTEMPTS = 3;
+//	private int failedAttempts;
+//	private boolean accountLocked;
+//
+//	private static final int MAX_ATTEMPTS = 3;
 
 	public User(String name, String email, String password) {
 		setName(name);
 		setEmail(email);
 		setPassword(password);
-		this.failedAttempts=0;
-		this.accountLocked=false;
+//		this.failedAttempts=0;
+//		this.accountLocked=false;
 	}
 
 	public String getName() {

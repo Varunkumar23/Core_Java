@@ -35,7 +35,6 @@ public class constructorChaining {
 	}
 
 	public constructorChaining(String pan) {
-		this();
 		this.pan = pan;
 	}
 

@@ -15,7 +15,7 @@ public class BankAccountHolderDetails {
 		}
 
 		if (balance < MINIMUM_BALANCE) {
-			throw new IllegalArgumentException("Initial balance must be at least " + MINIMUM_BALANCE);
+			throw new IllegalArgumentException("Initial balance must be atleast " + MINIMUM_BALANCE);
 		}
 
 		this.accountNumber = accountNumber;

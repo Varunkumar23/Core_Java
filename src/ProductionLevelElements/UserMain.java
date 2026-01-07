@@ -54,7 +54,7 @@ public class UserMain {
 				}
 			}
 		}
-
-	}
+		sc.close();
+		}
 
 }

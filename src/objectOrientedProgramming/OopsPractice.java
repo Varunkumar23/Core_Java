@@ -32,6 +32,6 @@ public class OopsPractice {
 		Student s2 = new Student("Vishnu Kanth");
 		System.out.println(s2.name);
 		System.out.println(s2.age);
-		System.out.println(s2.college);
+		System.out.println(Student.college);
 	}
 }

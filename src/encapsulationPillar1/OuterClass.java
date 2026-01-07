@@ -1,4 +1,4 @@
-package Encapsulation_Pillar1;
+package encapsulationPillar1;
 
 public class OuterClass {
 	static class InnerClass {
@@ -18,11 +18,15 @@ public class OuterClass {
 
 		// this is for when the class is static
 		// As display is a static method we can directly call thhe method
-		OuterClass.InnerClass.display();
+//		OuterClass.InnerClass.display();
 
 		// And test is a non static we have to create a object to access the test method
-		OuterClass.InnerClass e1 = new OuterClass.InnerClass();
-		e1.test();
+//		OuterClass.InnerClass e1 = new OuterClass.InnerClass();
+//		e1.test();
+		
+		InnerClass i1=new InnerClass();
+		i1.display();
+		i1.test();
 		
 		
 		
