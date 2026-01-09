@@ -9,10 +9,6 @@ public class HasAMethodMultipleObjects2 {
 			return deptName;
 		}
 
-		public void setDeptName(String deptName) {
-			this.deptName = deptName;
-		}
-
 		public Department(String deptName) {
 			this.deptName = deptName;
 		}
@@ -21,6 +17,7 @@ public class HasAMethodMultipleObjects2 {
 
 	static class University {
 		private String uniName;
+		private Department[] departments;
 
 		public String getUniName() {
 			return uniName;
@@ -30,7 +27,6 @@ public class HasAMethodMultipleObjects2 {
 			this.uniName = uniName;
 		}
 
-		private Department[] departments;
 
 		public Department[] getDepartments() {
 			return departments;

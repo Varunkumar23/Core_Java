@@ -1,6 +1,6 @@
 package encapsulationPillar1;
 
-public class OuterClass {
+public class OuterClass {      
 	static class InnerClass {
 		static void display() {
 			System.out.println("Static Method");
@@ -17,7 +17,7 @@ public class OuterClass {
 	public static void main(String[] args) {
 
 		// this is for when the class is static
-		// As display is a static method we can directly call thhe method
+		// As display is a static method we can directly call the method
 //		OuterClass.InnerClass.display();
 
 		// And test is a non static we have to create a object to access the test method

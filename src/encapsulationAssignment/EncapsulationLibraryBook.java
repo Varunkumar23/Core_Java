@@ -1,4 +1,4 @@
-package practiceQuestions;
+package encapsulationAssignment;
 
 public class EncapsulationLibraryBook {
 	

@@ -27,7 +27,11 @@ public class HasARelationByEarlyMethod2 {
 			this.modelName = modelName;
 		}
 
-		private Sim s = new Sim(12345);
+		private Sim s;
+		
+		public void setSim(int num) {
+			this.s=new Sim(num);
+		}
 
 		public Sim getSim() {
 			return s;
@@ -38,6 +42,7 @@ public class HasARelationByEarlyMethod2 {
 	public static void main(String[] args) {
 
 		Phone p = new Phone("Motorola");
+		p.setSim(12345);
 		System.out.println(p.getModelName());
 		System.out.println(p.getSim().getEnumber());
 
