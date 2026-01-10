@@ -3,6 +3,7 @@ package encapsulationPillar1;
 public class User {
 	private final int id;
 	private String email;
+	@SuppressWarnings("unused")
 	private String password;
 
 	public User(int id, String email, String password) {

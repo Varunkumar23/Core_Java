@@ -7,14 +7,14 @@ public class arrayAssignment {
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int n = arr.length;
 
-//1
-//		for(int i=0;i<n;i++) {
-//			if(arr[i]%5==0) {
-//				System.out.println(arr[i]);
-//			}
-//		}
-//
-//	}
+
+		for(int i=0;i<n;i++) {
+			if(arr[i]%5==0) {
+				System.out.println(arr[i]);
+			}
+		}
+
+	}
 
 //2
 
@@ -284,7 +284,7 @@ public class arrayAssignment {
 //		}
 //		System.out.println(second);
 
-	}
+//	}
 
 	public static int count(int n) {
 		int ans = 0;

@@ -1,6 +1,5 @@
 package isARelationShip;
 
-import java.util.DoubleSummaryStatistics;
 
 public class IsARelationShipImplementation {
 

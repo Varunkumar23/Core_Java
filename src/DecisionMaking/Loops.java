@@ -1,6 +1,6 @@
 package DecisionMaking;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Loops {
 
@@ -39,7 +39,7 @@ public class Loops {
 //		System.out.println();
 //	}
 		
-		int num=4;
+//		int num=4;
 //1
 //		for(int i=1;i<=num;i++) {
 //			for(int j=1;j<=num;j++) {

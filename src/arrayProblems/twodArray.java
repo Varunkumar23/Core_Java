@@ -27,6 +27,7 @@ public class twodArray {
 			}
 			System.out.println();
 		}
+		sc.close();
 
 	}
 

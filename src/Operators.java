@@ -3,13 +3,13 @@ public class Operators {
 public static void main(String[] args) {
 	
 	//Arithmetic
-	char A='A';
-	char B='B';
-	String hlo="Hello";
-	int x=10;
-	int y=15;
-	System.out.println(A);
-	
+//	char A='A';
+//	char B='B';
+//	String hlo="Hello";
+//	int x=10;
+//	int y=15;
+//	System.out.println(A);
+//	
 	
 	
 	

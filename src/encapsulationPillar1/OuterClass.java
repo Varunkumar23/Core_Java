@@ -25,7 +25,7 @@ public class OuterClass {
 //		e1.test();
 		
 		InnerClass i1=new InnerClass();
-		i1.display();
+//		i1.display();
 		i1.test();
 		
 		
