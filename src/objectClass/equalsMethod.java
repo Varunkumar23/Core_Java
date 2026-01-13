@@ -22,6 +22,10 @@ public class equalsMethod {
 			return this.name == s.name && this.age == s.age && this.address == s.address;
 		}
 
+		public int hashCode() {
+			return this.name.hashCode() + age + this.address.hashCode();
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -34,8 +38,17 @@ public class equalsMethod {
 		System.out.println(student1.equals(student2));
 		System.out.println(student1 == student2);
 
-		System.out.println(student1);
-		System.out.println(student2);
+		// so without overriding the hash code method this line gives the false because
+		// it generates the integer number based on address
+		// after overriding it generates the integer number on the properties
+		System.out.println(student1.hashCode() == student2.hashCode());
+		System.out.println(student1.hashCode());
+		System.out.println(student2.hashCode());
+		
+		System.out.println(student1.getClass());
+
+//		System.out.println(student1);
+//		System.out.println(student2);
 
 	}
 
