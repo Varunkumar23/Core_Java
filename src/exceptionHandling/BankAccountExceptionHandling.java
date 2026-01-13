@@ -20,7 +20,7 @@ public class BankAccountExceptionHandling {
 			}
 
 			if (amount > balance) {
-				throw new IllegalStateException("Insufficient Balance");
+				throw new InsufficientBalanceException("Insufficient Balance");
 			}
 
 			balance -= amount;
@@ -43,16 +43,24 @@ public class BankAccountExceptionHandling {
 
 	}
 
+	static class InsufficientBalanceException extends RuntimeException {
+		InsufficientBalanceException(String message) {
+			super(message);
+		}
+	}
+
 	public static void main(String[] args) {
 
 		BankAccount sbiAccount = new BankAccount(1234, 5000);
 		try {
 			sbiAccount.deposit(1000);
-			sbiAccount.withdraw(-3);
+			sbiAccount.withdraw(10000);
 		} catch (IllegalArgumentException e) {
 			System.out.println("Input Error: " + e.getMessage());
 		} catch (IllegalStateException e) {
 			System.out.println("Business Error: " + e.getMessage());
+		} catch (InsufficientBalanceException e) {
+			System.out.println(e.getMessage());
 		} finally {
 			System.out.println("Transaction attempt completed");
 		}
