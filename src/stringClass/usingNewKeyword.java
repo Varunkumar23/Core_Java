@@ -1,8 +1,5 @@
 package stringClass;
 
-import java.awt.peer.SystemTrayPeer;
-
-import javax.sql.XAConnection;
 
 public class usingNewKeyword {
 

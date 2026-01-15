@@ -1,9 +1,11 @@
+package Java_Basic_Foundation;
+
 class Variables 
 {
 	public static void main(String[] args) 
 	{
 		int a=9;
-		int a=10;
+//		int a=10;
 		System.out.println(a);
 	}
 }

@@ -1,4 +1,6 @@
-class   
+package Java_Basic_Foundation;
+
+public class primitiveDataTypes
 {
 	public static void main(String[] args) 
 	{

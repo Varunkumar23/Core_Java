@@ -44,6 +44,11 @@ public class BankAccountExceptionHandling {
 	}
 
 	static class InsufficientBalanceException extends RuntimeException {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		InsufficientBalanceException(String message) {
 			super(message);
 		}
