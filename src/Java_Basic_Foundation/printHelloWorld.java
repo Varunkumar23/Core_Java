@@ -1,21 +1,16 @@
 package Java_Basic_Foundation;
 
-
-class printHelloWorld 
-{
-	public static void main(String[] args) 
-	{
+class printHelloWorld {
+	public static void main(String[] args) {
 		System.out.print("Hii ");
-		System.out.print("Hello");		
+		System.out.print("Hello");
 		System.out.println();
 		System.out.print("Lpu ");
 		System.out.print("welcome ");
 		System.out.print("to ");
 		System.out.print("java ");
 		System.out.print("class");
-		System.err.println("Invalid input");
+		System.out.println("Invalid input");
 
-										
-				
 	}
 }

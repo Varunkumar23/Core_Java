@@ -2,32 +2,32 @@ package stringsAssignment;
 
 import java.util.HashMap;
 import java.util.HashSet;
-
+import java.util.function.IntConsumer;
 
 public class IntermediateStringProblems {
 
 	public static void main(String[] args) {
 
-		String string = "Lovely Professional University";
-		HashMap<Character, Integer> map = new HashMap<>();
-		
-		for(int i=0;i<string.length();i++) {
-			char ch=string.charAt(i);
-			
-			if(map.containsKey(ch)) {
-				map.put(ch,map.get(ch)+1);
-				
-			}else {
-				map.put(ch,1);  
-			}
-		}
-		
-		for(char key:map.keySet()) {
-			if(map.get(key)>1) {
-				System.out.print(key+" ");
-			}
-			
-		}
+//		String string = "Lovely Professional University";
+//		HashMap<Character, Integer> map = new HashMap<>();
+//
+//		for (int i = 0; i < string.length(); i++) {
+//			char ch = string.charAt(i);
+//
+//			if (map.containsKey(ch)) {
+//				map.put(ch, map.get(ch) + 1);
+//
+//			} else {
+//				map.put(ch, 1);
+//			}
+//		}
+//
+//		for (char key : map.keySet()) {
+//			if (map.get(key) > 1) {
+//				System.out.print(key + " ");
+//			}
+//
+//		}
 
 		// 2
 
@@ -135,6 +135,50 @@ public class IntermediateStringProblems {
 //		}
 //		
 //		System.out.println(sBuilder.toString());
+
+//8
+
+//		String string2 = "lovely professional university";
+//
+//		String[] arr = string2.split(" ");
+//		StringBuilder sBuilder = new StringBuilder();
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			sBuilder.append(arr[i].substring(0, 1).toUpperCase() + arr[i].substring(1)).append(" ");
+//			
+//
+//		}
+//		System.out.println(sBuilder.toString());
+
+//9
+//
+//		String string = "Varun kumar is studying his graduation in lovely professionaldsbkj university";
+//		String[] arr = string.split(" ");
+//		int maxLength = 0;
+//		String word="";
+//		for (int i = 0; i < arr.length; i++) {
+//			if(arr[i].length()>maxLength) {
+//			word=arr[i];
+//			maxLength =arr[i].length();
+//			}
+//		}
+//		System.out.println(maxLength);
+//		System.out.println(word);
+		
+		
+//10
+		
+		String mainString="abbbbbabacabababababac";
+		String subString="abac";
+	int count=0;
+		
+		for(int i=0;i<=mainString.length()-subString.length();i++) {
+			if(mainString.substring(i,i+subString.length()).equals(subString)) {
+				count++;
+			}
+		}
+		System.out.println(count);
 	}
+	
 
 }
