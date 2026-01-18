@@ -2,7 +2,6 @@ package stringsAssignment;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.function.IntConsumer;
 
 public class IntermediateStringProblems {
 
@@ -168,16 +167,16 @@ public class IntermediateStringProblems {
 		
 //10
 		
-		String mainString="abbbbbabacabababababac";
-		String subString="abac";
-	int count=0;
-		
-		for(int i=0;i<=mainString.length()-subString.length();i++) {
-			if(mainString.substring(i,i+subString.length()).equals(subString)) {
-				count++;
-			}
-		}
-		System.out.println(count);
+//		String mainString="abbbbbabacabababababac";
+//		String subString="abac";
+//	int count=0;
+//		
+//		for(int i=0;i<=mainString.length()-subString.length();i++) {
+//			if(mainString.substring(i,i+subString.length()).equals(subString)) {
+//				count++;
+//			}
+//		}
+//		System.out.println(count);
 	}
 	
 

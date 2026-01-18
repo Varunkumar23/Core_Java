@@ -67,7 +67,7 @@ public class ArrayListDemo {
 
 		System.out.println(list.contains(123));
 		System.out.println(list.indexOf(4));
-		System.out.println(list.lastIndexOf(4));
+		System.out.println(list.lastIndexOf(4));			
 
 		System.out.println(list.size()); // size
 		System.out.println(list.isEmpty()); // isEmpty

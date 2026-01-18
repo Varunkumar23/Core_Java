@@ -1,6 +1,5 @@
 package WrapperClasses;
 
-import java.util.stream.IntStream;
 
 public class wrapperClassesDemo {
 
@@ -42,7 +41,7 @@ public class wrapperClassesDemo {
 		System.out.println(z);
 		
 		
-		//auto unboxing'
+		//auto unboxing
 		
 		int s=77;
 		Integer integer5=s;
