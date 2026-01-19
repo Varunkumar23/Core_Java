@@ -1,4 +1,4 @@
-package JavaCollectionsFramework;
+package JavaCollectionsFramework_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,7 +13,7 @@ public class ArrayListDemo {
 		// Dynamic Size
 		// Three ways to create the array list
 		// 1. without any capacity(size)
-		// 2. with capacity
+		// 2. with capacity          
 		// 3. We can pass a list directly to a list
 
 		// base ArrayList without any size
@@ -120,6 +120,7 @@ public class ArrayListDemo {
 //		System.out.println(l1.addAll(l2));
 //		System.out.println(l1);
 		
+		//Remove from l1 everything that appears in l2”
 //		l1.removeAll(l2);
 //		System.out.println(l1);
 		

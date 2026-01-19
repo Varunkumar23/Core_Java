@@ -1,4 +1,4 @@
-package JavaCollectionsFramework;
+package JavaCollectionsFramework_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,7 +19,7 @@ public class accessingElementsInCollections {
 		System.out.println(list);
 
 		System.out.println("===========");
-		// get(ndex)
+		// get(index)
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
