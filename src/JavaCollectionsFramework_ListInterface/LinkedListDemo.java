@@ -1,4 +1,4 @@
-package JavaCollectionsFramework_LinkedList;
+package JavaCollectionsFramework_ListInterface;
 
 import java.util.LinkedList;
 import java.util.List;
