@@ -1,6 +1,7 @@
 package JavaCollectionsFramework_QueueInterface;
 
 import java.util.Comparator;
+import java.util.Deque;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -11,6 +12,24 @@ public class LinkedListImplementingQueue {
 	// fifo
 	// industry prefer offer-poll-peek because of thore are safe methods and dont
 	// crash the system alike add, element,remove which throws exception
+
+//	Implements Queue + Deque + List
+//
+//	Can act as:
+//
+//	Queue (FIFO)
+//
+//	Deque (both ends)
+//
+//	Stack (LIFO)
+//
+//	Cons ❌
+//
+//	Extra memory (nodes + pointers)
+//
+//	Slower than ArrayDeque
+//
+//	Random access is slow
 
 	static class Student {
 		int id;
@@ -51,6 +70,22 @@ public class LinkedListImplementingQueue {
 		while (queueIterator.hasNext()) {
 			System.out.println(queueIterator.next());
 		}
+
+		
+		//Implementing linked list as deque to perform operations on both the sides
+		Deque<Integer> deque = new LinkedList<>();
+		deque.addFirst(1);
+		deque.addFirst(2);
+		deque.addFirst(3);
+		
+		
+		System.out.println(deque.getFirst());
+		System.out.println(deque.getLast());
+	deque.removeFirst();
+	deque.removeLast();
+		
+		System.out.println(deque);
+		
 
 	}
 
