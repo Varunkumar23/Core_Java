@@ -17,9 +17,9 @@ class Student {
 	public void display() {
 		System.out.println("Hello Brother!");
 	}
-	
+
 	public String toString() {
-		return "Student Name: "+name+", Age: "+age;
+		return "Student Name: " + name + ", Age: " + age;
 	}
 }
 
@@ -31,16 +31,15 @@ public class AnonymousClassExample2 {
 		list.add(new Student(22, "Varun"));
 		list.add(new Student(19, "Aman"));
 		list.add(new Student(221, "Rahul"));
-		
-		
+
 // so here instead of writing a separate class to implement the comparator we are directly writing the implementation here 
-		// this class has no name so this is called anonymous class 
+		// this class has no name so this is called anonymous class
 		Collections.sort(list, new Comparator<Student>() {
 			public int compare(Student s1, Student s2) {
 				return s2.age - s1.age;
 			}
 		});
-		
+
 		System.out.println(list);
 
 	}
