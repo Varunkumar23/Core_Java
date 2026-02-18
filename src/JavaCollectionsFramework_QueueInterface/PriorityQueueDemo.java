@@ -1,13 +1,14 @@
 package JavaCollectionsFramework_QueueInterface;
 
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class PriorityQueueDemo {
 
 	public static void main(String[] args) {
 //In a priority queue we cannot add null value
 		// no indexing
-		//no neterogeneous data
+		//no heterogeneous data
 		
 		
 		
@@ -22,7 +23,7 @@ public class PriorityQueueDemo {
 //			👉 Priority matters more than arrival order
 //		
 		
-	PriorityQueue queue=new PriorityQueue<>();
+	Queue<Integer> queue=new PriorityQueue<>();
 	queue.offer(12);
 	queue.offer(2);
 	queue.offer(-1);

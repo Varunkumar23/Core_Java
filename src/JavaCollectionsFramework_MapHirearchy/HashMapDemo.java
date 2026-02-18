@@ -17,7 +17,7 @@ public class HashMapDemo {
 
 	public static void main(String[] args) {
 
-		Map<String, Integer> students = new HashMap();
+		Map<String, Integer> students = new HashMap<>();
 
 		students.put("Varun", 21);
 		students.put("Tharun", 27);
@@ -40,7 +40,8 @@ public class HashMapDemo {
 		for (Map.Entry<String, Integer> entry : students.entrySet()) {
 			System.out.println(entry.getKey() + " = " + entry.getValue());
 		}
-
+		
+		
 	}
 
 }

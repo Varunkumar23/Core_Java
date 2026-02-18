@@ -51,7 +51,7 @@ public class ArrayListDemo {
 
 		System.out.println(list);
 
-		list.add(1, 100); // adding element at specific index
+		list.add(1, 100); // adding element at specific index // this method specially presents in the list Interface
 		System.out.println(list);
 
 		// to get the element at specific index

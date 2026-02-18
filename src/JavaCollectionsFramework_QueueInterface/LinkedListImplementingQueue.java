@@ -10,7 +10,7 @@ public class LinkedListImplementingQueue {
 
 	// order is preserved
 	// fifo
-	// industry prefer offer-poll-peek because of thore are safe methods and dont
+	// industry prefer offer-poll-peek because  those are safe methods and don't
 	// crash the system alike add, element,remove which throws exception
 
 //	Implements Queue + Deque + List
@@ -31,28 +31,7 @@ public class LinkedListImplementingQueue {
 //
 //	Random access is slow
 
-	static class Student {
-		int id;
-		String name;
 
-		public Student(int id, String name) {
-			this.id = id;
-			this.name = name;
-		}
-
-		public String toString() {
-			return "Id: " + id + " Name: " + name;
-		}
-
-	}
-
-	static class StudentComparator implements Comparator<Student> {
-
-		public int compare(Student s1, Student s2) {
-			return s2.id - s1.id;
-		}
-
-	}
 
 	public static void main(String[] args) {
 		Queue<Integer> queue = new LinkedList<>();

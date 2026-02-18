@@ -30,6 +30,7 @@ System.out.println(queue);
 Deque<Integer> deque=new ArrayDeque<>();
 deque.offerFirst(1);
 deque.offerFirst(2);
+deque.offerLast(3);
 System.out.println(deque);
 
 deque.pollLast();

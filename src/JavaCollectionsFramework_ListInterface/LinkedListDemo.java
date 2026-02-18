@@ -72,6 +72,8 @@ public class LinkedListDemo {
 		//Linked List specific methods
 		list.addFirst(1);
 		list.addLast(1891);
+		list.removeFirst();
+		list.removeLast();
 		System.out.println(list);
 		
 		System.out.println(list.getFirst());

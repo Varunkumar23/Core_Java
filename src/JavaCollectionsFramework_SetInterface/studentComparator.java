@@ -23,7 +23,7 @@ public class studentComparator {
 	static class StudentComparator implements Comparator<Student> {
 
 		public int compare(Student s1, Student s2) {
-			return s2.id - s1.id;
+			return s1.id - s2.id;
 		}
 
 	}
